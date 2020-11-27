@@ -14,31 +14,21 @@ public class AnalyticsCounter {
 		BufferedReader reader = new BufferedReader (new FileReader("Project02Eclipse/symptoms.txt"));
 		String line = reader.readLine();
 
-		/* Above - Author names the file but does not provide path or directory
-		for "symptoms.txt". Program does not know where to find "symptoms.txt".
-		This is the reason for the exception.
-		 */
-
 		int i = 0;	// set i to 0
 		int headCount = 0;	// counts headaches
 		while (line != null) {
 			i++;	// increment i
 			System.out.println("symptom from file: " + line);
 			if (line.equals("headache")) {
-				headCount++;
-				System.out.println("number of headaches: " + headCount);
+				headacheCount++;
 			}
-			else if (line.equals("rush")) {
-				/* "rush" should be "rash"
-				 */
+
+			else if (line.equals("rash")) {
 				rashCount++;
-				/* Author may have forgotten to print "number of rashes"
-				 */
 			}
+
 			else if (line.contains("pupils")) {
 				pupilCount++;
-				/* Author may have forgotten to print "number of pupils"
-				 */
 			}
 
 			line = reader.readLine();	// get another symptom
@@ -46,9 +36,6 @@ public class AnalyticsCounter {
 		
 		// next generate output
 		FileWriter writer = new FileWriter ("result.out");
-
-		/* Above - No path given for "result.out"
-		 */
 
 		writer.write("headache: " + headacheCount + "\n");
 		writer.write("rash: " + rashCount + "\n");
