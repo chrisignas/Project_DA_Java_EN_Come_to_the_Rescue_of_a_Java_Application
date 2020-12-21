@@ -4,6 +4,18 @@ import java.util.List;
 import java.util.Map;
 import java.util.TreeMap;
 
+/**
+ * <h1>Count Symptoms Class</h1>
+ * The CountSymptoms program implements an application that
+ * simply counts occurrences of symptoms within a text file
+ * and alphabetizes them.
+ * <p>
+ *
+ * @author  Christopher Ignas
+ * @version 1.0
+ * @since   2020-12-17
+ */
+
 public class CountSymptoms {
 
     Map<String, Integer> getSymptoms(List<String> symptomsListFromFile) {
