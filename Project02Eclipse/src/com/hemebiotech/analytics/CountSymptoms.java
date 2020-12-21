@@ -7,8 +7,8 @@ import java.util.TreeMap;
 /**
  * <h1>Count Symptoms Class</h1>
  * The CountSymptoms program implements an application that
- * simply counts occurrences of symptoms within a text file
- * and alphabetizes them.
+ * simply counts occurrences of symptoms within a list of strings
+ * (symptoms) and alphabetizes them.
  * <p>
  *
  * @author  Christopher Ignas
